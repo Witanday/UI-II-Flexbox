@@ -64,3 +64,226 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+header{
+	display: flex;
+	flex-direction: column;
+	background:linear-gradient(to right, rgba(0, 159, 250, 0.1), rgba(0, 159, 250, 0.1)),
+	url(/great-idea/img/bg.jpg);
+	  background-position: center;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	
+}
+nav {
+	display: flex;
+	width: 100vw;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+	padding-right: 30px;
+	box-shadow:  0 0 1px rgba(0,0,0,0.4);
+	-moz-box-shadow:0 0 1px rgba(0,0,0,0.4);
+	position: fixed;
+	z-index: 10;
+	background: rgba(255,255,255,0.8);
+	flex: 1 0 0;
+}
+nav ul{
+	
+	display: flex;
+	flex: 1 0 0;
+	
+}
+nav ul li  { 
+	display: inline-block;
+	flex: 1 0 0;
+	list-style: none;
+}
+
+nav ul li  a{ 
+	text-decoration: none;
+	padding: 5px 50px;
+	text-align: center;
+	color:  #009ff0;
+	border-radius: 4px;
+	background: transparent;
+	transition: background 1s easy, color 1s easy;
+	}
+
+nav ul li  a:hover{ 
+		color:  #fff;
+		background: #009ff0;
+		
+	}
+
+section{
+	width: 80%;
+	margin: 50px auto;	
+}
+
+.hero{
+	display: flex;
+	height: 100vh;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+ h1{
+	font-size: 65px;
+	text-align: center;
+	text-align: center;
+	color:#009ff0; 
+}
+
+.hero img{
+	height: 350px;
+	width: 350px;
+	margin-left: 20px;
+	border:12px solid #009ff0;
+	border-radius: 200px;
+}
+
+
+
+.btn{
+	padding: 10px 30px;
+	width: 150px;
+	background: #009ff0;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	transition: background 1s easy, color 1s easy;
+}
+.btn:hover{
+	background: #000;
+	color: #009ff0;
+}
+
+.hero2{
+	display: flex;
+	flex-direction: column;
+	border-top: 5px solid #009ff0;
+	border-bottom: 5px solid #009ff0;
+}
+
+.hero2-box1{
+	margin-top: 20px;
+	margin-bottom: 20px;	
+	display: flex;
+}
+
+.article-content{
+	padding: 15px;
+	
+	
+}
+
+.ct1{
+	width: 50%;
+}
+ h2{
+	margin-bottom: 20px;
+	font-size: 28px;
+	color:#009ff0;
+}
+
+ p{
+	margin-bottom: 20px;
+	font-size: 22px;
+	color: #555;
+	
+}
+
+.hero2 img{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display:block;
+}
+.hero2-box2{
+	display: flex;
+	
+}
+.ct2{
+	width: 33.3%;
+}
+.footer{
+	width: 80%;
+	margin-left: 155px
+	
+}
+
+.footer h2{
+	font-size: 28px;
+	color:#009ff0;
+}
+.footer h4{
+	font-size: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #555;
+}
+address{
+	font-size: 20px;
+}
+
+/*******************/
+
+.hero-services{
+	display: flex;
+	flex-direction: column;
+}
+
+.hero-services img{
+	margin-bottom: 30px;
+	height: 250px;
+	width: 100%;
+}
+
+
+
+.hero2-service{
+	display: flex;
+	flex-direction: column;
+}
+
+.box-service{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.content-service{
+	flex: 0 0 50%;
+	background: #f5f5f5;
+	padding: 20px;
+	padding-bottom: 30px;
+	box-shadow:  0 0 1px rgba(0,0,0,0.4);
+	-moz-box-shadow:0 0 1px rgba(0,0,0,0.4);
+	margin: 10px;
+}
+
+.box-fact{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: 5px auto;
+	background: #f5f5f5;
+	box-shadow:  0 0 1px rgba(0,0,0,0.4);
+	-moz-box-shadow:0 0 1px rgba(0,0,0,0.4);
+	padding: 20px;
+}
+.content-fact{
+	flex: 0 0 40%;
+}
+.list{
+	list-style-type: square ;
+	padding: 20px;
+}
